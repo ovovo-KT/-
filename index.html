@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>花畑の朝</title>
+  
+  <style>
+    /* 全体を囲む箱の大きさ */
+    .container {
+      position: relative;
+      width: 960px;  /* 画像の実際の横幅に合わせて調整してください */
+      height: 540px; /* 画像の実際の縦幅に合わせて調整してください */
+      margin: 0 auto;
+    }
+
+    /* 背景画像 */
+    .bg-img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 1. 左上のメッセージボックス */
+    .message-box {
+      position: absolute;
+      top: 15px;
+      left: 20px; /* 左側に寄せた位置 */
+      width: max-content; /* 文字の長さに合わせて箱の横幅をピッタリにします */
+      background-color: rgba(255, 255, 255, 0.65); /* 白の透明度 */
+      padding: 15px 25px; /* 箱が大きくなりすぎないよう余白をスマートに */
+      border-radius: 6px;
+      z-index: 10;
+    }
+
+    .message-box p {
+      color: #b32454; /* 濃いピンク・赤系の文字色 */
+      font-weight: bold;
+      margin: 8px 0;
+      font-family: sans-serif;
+    }
+
+    /* 両方の文字サイズを同じ（24px）に統一 */
+    .message-box .title {
+      font-size: 24px;
+    }
+    .message-box .subtitle {
+      font-size: 24px;
+    }
+
+    /* 2. 蝶々の共通設定 */
+    .butterfly {
+      position: absolute;
+      width: 70px; /* 蝶々のサイズ */
+      z-index: 5;
+    }
+
+    /* 各蝶々の位置と角度 */
+    .bf1 {
+      bottom: 15%;
+      left: 15%;
+      transform: rotate(-15deg);
+    }
+
+    .bf2 {
+      bottom: 20%;
+      left: 40%;
+      transform: rotate(10deg);
+    }
+
+    .bf3 {
+      bottom: 10%;
+      left: 62%;
+      transform: rotate(-5deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <img src="C:\Users\taiko\Downloads\CL-13_圧縮解凍後index.htmlを開く\CL-13_圧縮解凍後index.htmlを開く\素材\bg0.png" class="bg-img" alt="背景">
+
+    <div class="message-box">
+      <p class="title">ぽかぽか陽気の穏やかな朝</p>
+      <p class="subtitle">花畑では、蝶々がのんびり飛んでいます</p>
+    </div>
+
+    <img src="C:\Users\taiko\Downloads\CL-13_圧縮解凍後index.htmlを開く\CL-13_圧縮解凍後index.htmlを開く\素材\butterfly.gif" class="butterfly bf1" alt="蝶々1">
+    <img src="C:\Users\taiko\Downloads\CL-13_圧縮解凍後index.htmlを開く\CL-13_圧縮解凍後index.htmlを開く\素材\butterfly.gif" class="butterfly bf2" alt="蝶々2">
+    <img src="C:\Users\taiko\Downloads\CL-13_圧縮解凍後index.htmlを開く\CL-13_圧縮解凍後index.htmlを開く\素材\butterfly.gif" class="butterfly bf3" alt="蝶々3">
+
+  </div>
+
+</body>
+</html>
